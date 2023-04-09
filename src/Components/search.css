@@ -1,0 +1,95 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.title-card {
+  color: white;
+  text-shadow: 13px 24px 7px rgba(0, 0, 0, 3.8);
+  font-weight: 800;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+.searchinput {
+  margin-top: 20px;
+
+  width: 30%;
+  height: 25px;
+  padding: 13px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.searchbutton {
+  cursor: pointer;
+  width: 7%;
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 15px;
+  background-color: #ffffffad;
+}
+.list-item {
+  list-style: none;
+  display: flex;
+  height: 30px;
+}
+.country {
+  margin-left: 10px;
+  color: rgb(40, 36, 36);
+}
+.title {
+  cursor: pointer;
+}
+ul {
+  height: 100px;
+  width: 40%;
+  text-align: center;
+  border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .searchinput {
+    width: 250px;
+    font-size: 15px;
+  }
+  .searchbutton {
+    padding: 15px;
+    width: 100px;
+  }
+}
